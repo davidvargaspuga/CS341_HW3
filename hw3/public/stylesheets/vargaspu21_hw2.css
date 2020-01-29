@@ -1,0 +1,115 @@
+/* Author: David Vargas Puga */
+.dropdown {
+    /* source: https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_text */
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    /* source: https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_text */
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    /* declares height and width for  */
+    max-width: 500px; 
+    max-height: 75px;
+    overflow-y: scroll; /* adds scrollbar */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown-content a:hover {
+    /* source: https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp */
+    background-color: #ddd;
+  }
+  
+.dropdown:hover .dropdown-content {
+    /* source: https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp */
+    display: block;
+}
+
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-style: italic;
+    font-size: 36px;
+    line-height: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+p{
+     font-size: larger;
+     font-weight: bold;
+}
+body{
+    background-color: lightcoral;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+
+img{
+    width: 300px; 
+    height:225px;
+    padding:1px;
+    border:1px solid #021a40;
+    background-color: blue;
+    
+}
+
+input[type="radio"]{
+    vertical-align: middle;
+}
+
+input[type=submit] {
+    background: blue;
+    color: white;
+    border-color: #0066a2;
+    border-style: solid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100px;  
+    height: 50px;
+}
+
+select{
+    width: 40px;
+    height: 36px;
+    font-size: 18px;
+}
+
+textarea {
+    padding:1px;
+    border:1px solid blue;
+}
+
+td{
+    text-align: left; /* keeps radio buttons left-aligned */
+    font-family: 'Courier New', Courier, monospace;  
+}
+
+ul{
+    /* aligns the table in the center */
+    text-align: center;
+    list-style-position: inside;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+table{
+    margin: 0px auto; /* aligns the table in the center */
+}
+
+select{
+    text-align: center; 
+    font-family: 'Courier New', Courier, monospace; /* changes font on dropdown menu */
+}
+
+li{
+    text-align: center; /* left aligns bullet points */
+    font-family: 'Courier New', Courier, monospace;
+}
+

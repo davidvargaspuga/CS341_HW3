@@ -1,0 +1,89 @@
+<!-- Author: David Vargas Puga -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- include css file -->
+		<link rel="stylesheet" type="text/css" href="stylesheets/vargaspu21_hw2.css"> 
+		<script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"/></script>
+		<!-- <script src="jquery-3.4.1.min.js"></script> -->
+		
+	</head>
+	<body>
+		<h1>
+			<!-- website title -->
+			Cheesecake Order Form
+		</h1>
+
+		<!-- references the cheesecake image -->
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg/800px-Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg" alt="Cheesecake" width="200" height="200"> 
+		
+		<p id="quantityTitle">
+			<!-- title -->
+			Quantity Topping
+		</p>
+		<table id="options"> 
+			<tr>
+				<td> 
+					<!-- dropdown menu -->
+					<select id="amount">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+					</select>
+				</td>
+				<td> 
+					<!-- radio buttons -->
+					<input type="radio" name="topping" value="Plain" id="plain">Plain<br>
+  					<input type="radio" name="topping" value="Cherry" id="cherry">Cherry<br>
+  					<input type="radio" name="topping" value="Chocolate" id="choco">Chocolate<br> 
+				</td>
+			</tr>
+		</table>
+			
+		<p id="notes">Notes:<br>
+			<!-- text box for instructions -->
+			<textarea id="notesText" rows="4" cols="50" placeholder="Enter any special instructions here."></textarea>
+		</p>
+		<input id="orderButton" type="submit" value="Order" onclick="return order()"/>
+		<h3 id="thanks"></h3>
+		<h5 id="orderDetails"></h5>
+		<h5 id="orderNotes"></h5>
+		 
+		<h3 id="totalOrder">
+			<!-- smaller heading -->
+			<!-- drop down menu -->
+			Orders for 
+			<div class="dropdown"><font color="blue">Jan</font>
+				<div class="dropdown-content">
+						<a href="#">Jan</a>
+						<a href="#">Feb</a>
+						<a href="#">Mar</a>
+						<a href="#">Apr</a>
+						<a href="#">May</a>
+						<a href="#">Jun</a>
+						<a href="#">Jul</a>
+						<a href="#">Aug</a>
+						<a href="#">Sep</a>
+						<a href="#">Oct</a>
+						<a href="#">Nov</a>
+						<a href="#">Dec</a>
+				</div>
+			</div>
+		</h3>
+		<div id="orders" class="center">
+			<ul>
+				<!-- unordered list -->
+				<li>11 cherry</li>
+				<li>17 chocolate</li>
+				<li>31 plain</li>
+			</ul> 
+		</div>
+		<script src=javascripts/order.js></script>
+	</body>
+</html>
