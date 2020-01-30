@@ -1,3 +1,4 @@
+// Author: David Vargas Puga
 function order(){
     //retrieves text from text box and checks for "vegan"
     var notesText = $("#notesText").val();
